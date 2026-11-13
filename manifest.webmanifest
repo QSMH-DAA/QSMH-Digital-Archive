@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "QSMH Digital Archive — คลังความรู้ดิจิทัล",
+  "short_name": "QSMH Archive",
+  "description": "ระบบส่งและจัดเก็บผลงานพัฒนาคุณภาพ CQI, R2R, นวัตกรรม, วิจัย, KM และนวัตกรรมการจัดการสิ่งแวดล้อม",
+  "lang": "th",
+  "dir": "ltr",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+  "background_color": "#f4fbf7",
+  "theme_color": "#047857",
+  "categories": ["productivity", "education", "medical"],
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "เข้าสู่ระบบ / ส่งผลงาน", "short_name": "เข้าสู่ระบบ", "url": "./app.html", "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

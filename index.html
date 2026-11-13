@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>QSMH Digital Archive</title>
+  <meta name="description" content="คลังความรู้ดิจิทัล QSMH — ระบบจัดส่ง จัดเก็บ และเผยแพร่ผลงานพัฒนาคุณภาพ CQI, R2R, นวัตกรรม, วิจัย, KM และโครงการนวัตกรรมการจัดการสิ่งแวดล้อม">
+  <meta name="theme-color" content="#047857">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- PWA / ไอคอนแอป -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/icon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="QSMH Archive">
+  <meta name="msapplication-TileImage" content="assets/icons/mstile-310.png">
+  <meta name="msapplication-TileColor" content="#047857">
+
+  <!-- แชร์ลิงก์ (LINE / Facebook) -->
+  <meta property="og:title" content="QSMH Digital Archive — คลังความรู้ดิจิทัล">
+  <meta property="og:description" content="ส่งผลงาน CQI • R2R • Innovation • Research • KM • นวัตกรรมสิ่งแวดล้อม ออนไลน์ครบในที่เดียว">
+  <meta property="og:image" content="assets/icons/icon-512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/landing.css" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <!-- ===== Header ===== -->
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="QSMH Digital Archive หน้าแรก">
+      <img src="assets/icons/icon.svg" alt="" width="40" height="40">
+      <span><b>QSMH</b> Digital Archive<small id="orgNameTop"></small></span>
+    </a>
+    <nav class="topnav" aria-label="เมนูหลัก">
+      <a href="#types">ประเภทผลงาน</a>
+      <a href="#how">ขั้นตอน</a>
+      <a href="#install">ติดตั้งแอป</a>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="สลับโหมดสว่าง/มืด"><i class="bi bi-moon-stars"></i></button>
+      <a class="btn btn-primary btn-sm js-login" href="app.html"><i class="bi bi-box-arrow-in-right"></i><span>เข้าสู่ระบบ</span></a>
+    </nav>
+  </header>
+
+  <!-- ===== Hero: ซ้าย = นวัตกรรมสิ่งแวดล้อม | กลาง = ข้อความ + Login | ขวา = ภาพกิจกรรม ===== -->
+  <main id="main">
+    <section class="hero">
+      <!-- LEFT -->
+      <figure class="panel panel-left reveal" aria-label="นวัตกรรมการจัดการสิ่งแวดล้อม">
+        <div class="slides" id="innovSlides">
+          <div class="slide is-active">
+            <img src="assets/img/env-innovation.svg" alt="ภาพกราฟิกโรงพยาบาลสีเขียว พลังงานแสงอาทิตย์ กังหันลม และการแยกขยะ">
+          </div>
+        </div>
+        <div class="chip-float c1"><i class="bi bi-sun"></i>พลังงานสะอาด</div>
+        <div class="chip-float c2"><i class="bi bi-recycle"></i>ลดขยะ 3R</div>
+        <div class="chip-float c3"><i class="bi bi-droplet-half"></i>ประหยัดน้ำ</div>
+        <figcaption class="panel-cap">
+          <span class="eyebrow light"><i class="bi bi-tree"></i> Green Hospital</span>
+          <strong id="innovTitle">นวัตกรรมการจัดการสิ่งแวดล้อม</strong>
+          <span id="innovTag">โครงการลดโลกร้อน • สิ่งประดิษฐ์จากวัสดุเหลือใช้</span>
+        </figcaption>
+      </figure>
+
+      <!-- CENTER -->
+      <div class="hero-center reveal">
+        <span class="eyebrow"><span class="dot"></span> Knowledge Hub • Quality • Innovation</span>
+        <h1>คลังความรู้<br><span class="grad">ดิจิทัล QSMH</span></h1>
+        <p class="lead">ส่ง จัดเก็บ ติดตาม และแบ่งปันผลงานพัฒนาคุณภาพของทุกหน่วยงาน
+          ในที่เดียว — ตั้งแต่ CQI, R2R, งานวิจัย ไปจนถึง<b>นวัตกรรมการจัดการสิ่งแวดล้อม</b></p>
+
+        <div class="cta">
+          <a class="btn btn-primary btn-lg js-login" href="app.html"><i class="bi bi-shield-lock"></i> เข้าสู่ระบบ</a>
+          <button class="btn btn-ghost btn-lg" id="installBtn" type="button"><i class="bi bi-download"></i> ติดตั้งแอป</button>
+        </div>
+        <p class="hint"><i class="bi bi-person-badge"></i> ใช้รหัสเจ้าหน้าที่ 7 หลัก และเลขบัตรประชาชน 13 หลัก</p>
+
+        <dl class="stats" id="stats"></dl>
+      </div>
+
+      <!-- RIGHT -->
+      <figure class="panel panel-right reveal" aria-label="ภาพกิจกรรม" aria-roledescription="carousel">
+        <div class="slides" id="actSlides"></div>
+        <div class="panel-top">
+          <span class="badge-live"><span class="dot"></span> ภาพกิจกรรม</span>
+          <div class="nav-arrows">
+            <button type="button" class="icon-btn glass" id="actPrev" aria-label="ภาพก่อนหน้า"><i class="bi bi-chevron-left"></i></button>
+            <button type="button" class="icon-btn glass" id="actNext" aria-label="ภาพถัดไป"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+        <figcaption class="panel-cap">
+          <span class="eyebrow light" id="actDate"></span>
+          <strong id="actTitle"></strong>
+          <div class="dots" id="actDots" role="tablist"></div>
+        </figcaption>
+        <div class="progress"><span id="actProgress"></span></div>
+      </figure>
+    </section>
+
+    <!-- ===== ประเภทผลงาน ===== -->
+    <section class="section" id="types">
+      <div class="sec-head reveal">
+        <span class="eyebrow"><i class="bi bi-collection"></i> รองรับผลงาน 8 รูปแบบ</span>
+        <h2>ทุกผลงานคุณภาพ อยู่ในคลังเดียว</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal"><i class="bi bi-arrow-repeat"></i><h3>CQI</h3><p>พัฒนาคุณภาพต่อเนื่อง พร้อมติดตามผลรายไตรมาส</p></article>
+        <article class="card reveal"><i class="bi bi-clipboard2-pulse"></i><h3>R2R</h3><p>งานประจำสู่งานวิจัย ต่อยอดจากหน้างานจริง</p></article>
+        <article class="card reveal"><i class="bi bi-lightbulb"></i><h3>Innovation</h3><p>นวัตกรรมบริการและกระบวนการ</p></article>
+        <article class="card reveal"><i class="bi bi-journal-medical"></i><h3>Research</h3><p>งานวิจัยตามรูปแบบวารสาร อ้างอิง Vancouver</p></article>
+        <article class="card reveal"><i class="bi bi-people"></i><h3>KM</h3><p>การจัดการความรู้และบทเรียนที่ได้รับ</p></article>
+        <article class="card reveal"><i class="bi bi-file-earmark-medical"></i><h3>CNPG / CPG</h3><p>แนวปฏิบัติทางคลินิก ฝ่ายการพยาบาล</p></article>
+        <article class="card green reveal"><i class="bi bi-globe-asia-australia"></i><h3>นวัตกรรมสิ่งแวดล้อม</h3><p>Pain point → Concept → ความยั่งยืนและการขยายผล</p></article>
+        <article class="card green reveal"><i class="bi bi-recycle"></i><h3>สิ่งประดิษฐ์จากวัสดุเหลือใช้</h3><p>แรงบันดาลใจ วัสดุ ความทนทาน และประสิทธิภาพ</p></article>
+      </div>
+    </section>
+
+    <!-- ===== ขั้นตอน ===== -->
+    <section class="section" id="how">
+      <div class="sec-head reveal">
+        <span class="eyebrow"><i class="bi bi-signpost-split"></i> ใช้งานง่าย 4 ขั้นตอน</span>
+        <h2>จากหน้างาน สู่คลังความรู้</h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal"><span>1</span><h3>เข้าสู่ระบบ</h3><p>ยืนยันตัวตนด้วยรหัสเจ้าหน้าที่</p></li>
+        <li class="reveal"><span>2</span><h3>ส่ง/แก้ไขผลงาน</h3><p>กรอกแบบฟอร์มตามประเภท แนบไฟล์และรูปภาพ</p></li>
+        <li class="reveal"><span>3</span><h3>รับเอกสารอัตโนมัติ</h3><p>ระบบออกรหัสผลงาน สร้าง Word/PDF และส่งอีเมล</p></li>
+        <li class="reveal"><span>4</span><h3>ติดตาม & เผยแพร่</h3><p>รายงานผลย้อนหลัง คลังความรู้ และ Dashboard</p></li>
+      </ol>
+    </section>
+
+    <!-- ===== ติดตั้งแอป ===== -->
+    <section class="section" id="install">
+      <div class="install reveal">
+        <div class="install-text">
+          <span class="eyebrow light"><i class="bi bi-phone"></i> มือถือ • แท็บเล็ต • คอมพิวเตอร์</span>
+          <h2>ติดตั้ง QSMH Archive เป็นแอป</h2>
+          <p>มีไอคอนบนหน้าจอ เปิดได้ในคลิกเดียว เต็มจอเหมือนแอปจริง ไม่ต้องผ่าน App Store / Play Store</p>
+          <div class="platforms">
+            <div class="pf"><i class="bi bi-android2"></i><b>Android</b><span>Chrome → ⋮ → <em>ติดตั้งแอป</em></span></div>
+            <div class="pf"><i class="bi bi-apple"></i><b>iPhone / iPad</b><span>Safari → <i class="bi bi-box-arrow-up"></i> แชร์ → <em>เพิ่มไปยังหน้าจอโฮม</em></span></div>
+            <div class="pf"><i class="bi bi-windows"></i><b>Windows / Mac</b><span>Chrome / Edge → ไอคอน <i class="bi bi-window-plus"></i> ในแถบที่อยู่</span></div>
+          </div>
+          <button class="btn btn-light btn-lg" id="installBtn2" type="button"><i class="bi bi-download"></i> ติดตั้งเลย</button>
+        </div>
+        <div class="qr-box">
+          <div id="qr" aria-label="QR code สำหรับเปิดบนมือถือ"></div>
+          <small>สแกนเพื่อเปิดบนมือถือ</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><img src="assets/icons/icon.svg" alt="" width="28" height="28"> <b>QSMH Digital Archive</b></div>
+    <div id="orgNameFoot"></div>
+    <div class="muted">© <span id="year"></span> <span id="ownerDept">QSMH</span> • ข้อมูลส่วนบุคคลได้รับการคุ้มครองตาม PDPA</div>
+  </footer>
+
+  <!-- คำแนะนำติดตั้ง (iOS / เบราว์เซอร์ที่ไม่รองรับปุ่มอัตโนมัติ) -->
+  <dialog id="installDialog" class="dlg">
+    <form method="dialog">
+      <button class="icon-btn close" aria-label="ปิด"><i class="bi bi-x-lg"></i></button>
+      <img src="assets/icons/icon-192.png" alt="" width="72" height="72">
+      <h3>ติดตั้ง QSMH Archive</h3>
+      <div id="installSteps"></div>
+      <button class="btn btn-primary w-100">เข้าใจแล้ว</button>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  <script src="assets/js/landing.js" defer></script>
+</body>
+</html>
